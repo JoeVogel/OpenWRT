@@ -4,7 +4,7 @@
 
 while true; do 
 	
-	iw dev wlan0 scan | awk -f wlan_scan.awk | awk -f json.awk
+	iw dev wlan0 scan | awk -f /usr/bin/sensul/wlan_scan.awk | awk -f /usr/bin/sensul/json.awk
 	sleep 1
 
 done
