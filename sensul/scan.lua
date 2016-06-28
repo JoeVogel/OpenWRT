@@ -5,7 +5,7 @@ require("iwinfo")
 iface = "wlan0"
 t = iwinfo.type(iface)
 
-while (1=1) do
+while (1) do
 	
 	clients = iwinfo[t].assoclist(iface)
 
